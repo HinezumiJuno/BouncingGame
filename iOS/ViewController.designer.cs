@@ -11,14 +11,14 @@ namespace BouncingGame.iOS
 	partial class ViewController
 	{
 		[Outlet]
-		UIKit.UIButton Button { get; set; }
+		CocosSharp.CCGameView GameView { get; set; }
 
 		void ReleaseDesignerOutlets()
 		{
-			if (Button != null)
+			if (GameView != null)
 			{
-				Button.Dispose();
-				Button = null;
+				GameView.Dispose();
+				GameView = null;
 			}
 		}
 	}
